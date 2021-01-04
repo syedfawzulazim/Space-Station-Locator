@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ISS Location</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <style>
+        #IssMap {
+            margin: auto;
+            height: 480px;
+            width: 600px;
+        }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col bg-warning text-center">
+                <h2>Where is the International Space Station...?</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bg-dark p-2 text-center text-white font-weight-bolder">
+                <div class="d-inline "></div>
+                <div class="d-inline "></div>
+                <div class="d-inline ">Visibility: ISS is in <span id="vis" class="text-warning"></span> </div>
+                <div class="d-inline "></div>
+                <div class="d-inline "></div>
+            </div>
+        </div>
+
+        <div class="row pt-3 pl-2">
+
+            <div class="col" id="IssMap"></div>
+
+            <div class="col-3">
+                <table class="table table-striped" id="mytable">
+                    <tbody id="tbody">
+                        <tr>
+                            <td><strong>Time</strong></td>
+                            <td class="value">00:00:00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Altitude</strong></td>
+                            <td class="value">0</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Velocity</strong></td>
+                            <td class="value">0</b></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Latitude</strong></td>
+                            <td class="value">0</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Longitude</strong></td>
+                            <td class="value">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+
+    <script src="main.js"></script>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
